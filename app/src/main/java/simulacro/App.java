@@ -23,6 +23,7 @@ public class App {
      *  Adaptado de edabit
      */
 
+    
 
 
     /*
@@ -31,6 +32,16 @@ public class App {
      * Si hay un error, devuelve 0.
      *  Adaptado de edabit
      */
+
+     public static float Calcular_potencia(short voltaje, byte corriente){
+        try {
+            float potencia;
+            potencia = voltaje * corriente;
+            return potencia;
+        } catch (Exception e) {
+            return 0;
+        }
+     }
 
 
 
